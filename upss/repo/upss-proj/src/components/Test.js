@@ -4,7 +4,7 @@ class Test extends Component {
   render() {
     return (
       <div>
-        <p>TEST</p>
+        <p className="test">TEST</p>
       </div>
     );
   }

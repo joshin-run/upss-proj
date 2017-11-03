@@ -4,6 +4,9 @@
   box-sizing: border-box; }
 
 body {
-  background-color: lightblue; }
+  background-color: #43A3FF; }
+
+.test {
+  font: 100% Hiragino Kaku Gothic StdN, sans-serif; }
 
 /*# sourceMappingURL=App.css.map */

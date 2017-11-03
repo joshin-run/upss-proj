@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAA,CAAC;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;;AAExB,IAAI;EACF,gBAAgB,EAAE,SAAS",
-"sources": ["_main.sass"],
+"mappings": "AAAA,CAAC;EACC,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;;AAExB,IAAI;EACF,gBAAgB,ECAH,OAAO;;ADEtB,KAAK;EACH,IAAI,EAAE,0CAAsB",
+"sources": ["_main.sass","_colors.sass"],
 "names": [],
 "file": "App.css"
 }
