@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crypto Elevation</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+        <link rel="stylesheet" href="css/crypto.css" />
+        <script
+                src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="semantic/semantic.min.js"></script>
+        <script>
+            $(function() {
+                $('#toggle-menu i.open').click(function(){
+                    $('#header-nav .right.menu').transition('scale');
+                    $(this).hide()
+                    $('#toggle-menu i.close').fadeIn()
+                })
+
+                $('#toggle-menu i.close').click(function(){
+                    $('#header-nav .right.menu').transition('scale');
+                    $(this).hide()
+                    $('#toggle-menu i.open').fadeIn()
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <header class="ui container">
+            <div id="toggle-menu">
+                <i class="sidebar open icon"></i>
+                <i class="window close outline icon"></i>
+            </div>
+            <div class="ui menu" id="header-nav">
+                <a href="#"><img id="logo" src="images/logo.png" width="255" height="60"></a>
+                <div class="right menu">
+                    <a class="item active">HOME</a>
+                    <a class="item">EXPEDITIONS</a>
+                    <a class="item">SIGN UP</a>
+                    <a class="item">LOGIN</a>
+                    <a class="item" id="search-crypto"><i class="search icon"></i></a>
+                </div>
+            </div>
+        </header>
+        <div id="slider">
+            <div class="slide slide1">
+                <h1>ELEVATING WEALTH</h1>
+                <h3>THROUGH HUMANITY</h3>
+            </div>
+        </div>
+
+        <div class="ui container">
+            <div id="section2">
+                <div class="align-center"><h1 class="h1">OUR CAUSE</h1></div>
+                <div class="ui stackable two column grid">
+                    <div class="six wide column">
+                        <i id="video-cover">
+                            <a href="#"><img src="images/video.jpg"></a>
+                        </i>
+                    </div>
+                    <div class="ten wide column">
+                        <p>We believe that wealth can be measured many different ways. It is our belief that wealth is not just how much money an individual earns, but true wealth is what an individual person becomes and how many people he/she helps along the way. We are truly blessed to have created a strong friendship with Choice Humanitarian. Their group has been serving people in many different countries for over 35 years, We invite you to take advantage of going on actual expeditions with this fine group through one of our membership rewards programs or by signing up for an expedition through Choice.</p>
+                        <img src="images/rel.jpg">
+                    </div>
+                </div>
+                <div class="align-center">
+                    <ul id="amount-n">
+                        <li>$</li>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>5</li>
+                        <li>4</li>
+                        <li>6</li>
+                        <li>8</li>
+                    </ul>
+                    <a href="#" class="btn">SIGN IN</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3">
+            <div class="ui container">
+                <div class="align-center">
+                    <h1 class="h1 border-white">WHAT IS CRYPTO ELEVATION?</h1>
+                    <p class="text-white">A Global Cryptocurrency Opportunity that helps people all around the world create wealth, help others create wealth, and gives back to our Choice Humanitarian Cause. Our programmer is working on the back end of this site, it is a very complex subscription membership matrix. Members join Crypto Elevation for $90 worth of Crypto per month. Your membership gives you the opportunity to promote our Digital Gold Club and participate in our forced matrix to earn Cryptocurrency.</p>
+                    <a href="#" class="btn dark">READ MORE</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="section4">
+            <div class="ui container">
+                <div class="align-center">
+                    <h1 class="h1 border-white text-gold">BENEFITS & SUPPORT</h1>
+                    <ul id="benefits">
+                        <li>
+                            <span><i class="money icon"></i></span>
+                            <p>Up To 510 Payouts From Your Matrix</p>
+                        </li>
+                        <li>
+                            <span><i class="bullseye icon"></i></span>
+                            <p>Duplicatable Marketing Systems</p>
+                        </li>
+                        <li>
+                            <span><i class="record icon"></i></span>
+                            <p>Corporate <br> Videos</p>
+                        </li>
+                        <li>
+                            <span><i class="comments icon"></i></span>
+                            <p>Training Calls In Multiple Languages</p>
+                        </li>
+                        <li>
+                            <span><i class="laptop icon"></i></span>
+                            <p>Corporate <br> Website</p>
+                        </li>
+                        <li>
+                            <span><i class="info circle icon"></i></span>
+                            <p>Real Information Via Digital Gold Club</p>
+                        </li>
+                        <li>
+                            <span><i class="location arrow icon"></i></span>
+                            <p>Choice Humanitarian Expeditions</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonials">
+            <div class="ui container">
+                <div class="align-center"><h1 class="h1">TESTIMONIALS</h1></div>
+                <ul class="slide-testimonial">
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt labore dolor magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip one an commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        <b>John Smith, Sydney</b>
+                    </li>
+                </ul>
+                <div id="navi">
+                    <i class="active"></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">EXPEDITIONS</a></li>
+                <li><a href="#">SIGN UP</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+            <div id="copy">© Copyright 2017 Crypto Elevation. All Rights Reserved.</div>
+        </footer>
+
+        <ul id="rs-share">
+            <li><a href="#"><i class="facebook f icon"></i></a></li>
+            <li><a href="#"><i class="twitter icon"></i></a></li>
+            <li><a href="#"><i class="youtube play icon"></i></a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Testimonial Slider | Code Affair</title>
+<style>
+*{	/*some reset code, nothing else*/
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+#testimonials{
+	background: #f8f8f8 url('quote.png') no-repeat 17px 21px;
+	width:550px;
+	margin:50px auto;
+	padding: 20px 20px 40px 55px;
+	position:relative;
+}
+#testimonials .testimonial{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:450px;
+	z-index:1;
+}
+#testimonials h2{
+	color:#f25911;
+	font-size:22px;
+	font-style:normal;
+	line-height:22px;
+	margin-bottom:10px;
+}
+#test_container{
+	position:relative;
+	overflow:hidden;
+}
+#testimonials .testimonial_text{
+	font-size:14px;
+	font-family:verdana;
+	font-style:italic;
+}
+#testimonials .testimonial_name{
+	font-size:14px;
+	margin:10px auto 3px;
+	font-style:normal;
+	font-family:arial;
+}
+#testimonials .testimonial_designation{
+	font-size: 12px;
+	line-height: 14px;
+	font-family:verdana;
+}
+#t_pagers{
+	position:absolute;
+	left:40%;
+	bottom:10px;
+	z-index:2;
+}
+#t_pagers .pager{
+	display:inline-block;
+	text-decoration:none;
+	width:10px;
+	min-height:10px;
+	margin-right:5px;
+	background:#ccc;
+	border-radius:50%;
+	cursor:pointer;
+}
+#t_pagers .pager.active{
+	background:#f25911;
+}
+
+#navi i {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #CDA349;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+</style>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	var w,mHeight,tests=$("#testimonials");
+	w=tests.outerWidth();
+	mHeight=0;
+	tests.find(".testimonial").each(function(index){
+		$("#t_pagers").find(".pager:eq(0)").addClass("active");	//make the first pager active initially
+		if(index==0)
+			$(this).addClass("active");	//make the first slide active initially
+		if($(this).height()>mHeight)	//just finding the max height of the slides
+			mHeight=$(this).height();
+		var l=index*w;				//find the left position of each slide
+		$(this).css("left",l);			//set the left position
+		tests.find("#test_container").height(mHeight);	//make the height of the slider equal to the max height of the slides
+	});
+	$(".pager").on("click",function(e){	//clicking action for pagination
+		e.preventDefault();
+		next=$(this).index(".pager");
+		clearInterval(t_int);	//clicking stops the autoplay we will define later
+		moveIt(next);
+	});
+	var t_int=setInterval(function(){	//for autoplay
+		var i=$(".testimonial.active").index(".testimonial");
+		if(i==$(".testimonial").length-1)
+			next=0;
+		else
+			next=i+1;
+		moveIt(next);
+	},5000);
+});
+function moveIt(next){	//the main sliding function
+	var c=parseInt($(".testimonial.active").removeClass("active").css("left"));	//current position
+	var n=parseInt($(".testimonial").eq(next).addClass("active").css("left"));	//new position
+	$(".testimonial").each(function(){	//shift each slide
+		if(n>c)
+			$(this).animate({'left':'-='+(n-c)+'px'});
+		else
+			$(this).animate({'left':'+='+Math.abs(n-c)+'px'});
+	});
+	$(".pager.active").removeClass("active");	//very basic
+	$("#t_pagers").find(".pager").eq(next).addClass("active");	//very basic
+}
+</script>
+</head>
+<body>
+<div id="testimonials">
+		<h2>TESTIMONIALS</h2>
+		<div id="test_container">
+			<div class="testimonial">
+				<li>
+        <p>What a great opportunity we all have through Crypto Elevation. It is not often we have a chance to create wealth for ourselves all while helping others. It is the best of both worlds. The new World of currency and wealth meets the old World of selflessness and compassion.  I love everything about this platform.</p>
+        <b>Rebecca Sanchez, California</b>
+      </li>
+			</div>
+			<div class="testimonial">
+				<li>
+        <p>What a great opportunity we all have through Crypto Elevation. It is not often we have a chance to create wealth for ourselves all while helping others. It is the best of both worlds. The new World of currency and wealth meets the old World of selflessness and compassion.  I love everything about this platform.</p>
+        <b>Rebecca Sanchez, California</b>
+      </li>
+			</div>
+			<div class="testimonial">
+				<div class="testimonial_text">The guy is super cool, I wish I were like him :P</div>
+				<h3 class="testimonial_name">-Bill Gates</h3>
+				<div class="testimonial_designation">Founder, Microsoft</div>
+			</div>
+		</div>
+		<div id="t_pagers"><a class="pager"></a><a class="pager"></a><a class="pager"></a></div>
+		<div id="navi">
+      <i class="active"></i>
+      <i></i>
+      <i></i>
+    </div>
+</div>
+</body>
+</html>
