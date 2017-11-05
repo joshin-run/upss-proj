@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 class Banner extends Component {
   render() {
     return (
-      <div>
-
+      <div className="banner-wrapper">
+        <div className="hero-banner">
+          <Header />
+        </div>
       </div>
     );
   }

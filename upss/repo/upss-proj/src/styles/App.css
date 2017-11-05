@@ -4,9 +4,37 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #43A3FF; }
+  background-color: #fff; }
 
-.test {
-  font: 100% Hiragino Kaku Gothic StdN, sans-serif; }
+.navbar-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 100vw;
+  background-color: #fff;
+  padding: 0 15px 0 12px; }
+
+@media only screen and (min-width: 768px) {
+  .navbar-wrapper {
+    height: 65px;
+    padding: 0 90px 0 90px; } }
+.logo-img {
+  height: 45px;
+  margin-top: 3px;
+  padding: 0; }
+
+@media only screen and (min-width: 768px) {
+  .logo-img {
+    height: 55px; } }
+.mobile-menu-icon {
+  height: 20px;
+  width: 15px;
+  display: block; }
+
+@media only screen and (min-height: 768px) {
+  .mobile-menu-icon {
+    display: none; } }
 
 /*# sourceMappingURL=App.css.map */
