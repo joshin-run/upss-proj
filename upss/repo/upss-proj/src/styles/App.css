@@ -1,3 +1,29 @@
+.banner-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 85vh;
+  width: 100;
+  background-image: url(../images/bryce-canyon.jpg);
+  z-index: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 7px; }
+
+.header-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.header-title {
+  font-family: DIN Condensed, sans-serif;
+  font-size: 10vw;
+  color: #fff; }
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +44,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .navbar-wrapper {
-    height: 65px;
-    padding: 0 90px 0 90px; } }
+    height: 65px; } }
 .logo-img {
   height: 45px;
   margin-top: 3px;
