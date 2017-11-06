@@ -24,6 +24,36 @@
   font-size: 10vw;
   color: #fff; }
 
+.ididntknow-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 85vh;
+  width: 100;
+  background-image: url(../images/girl-in-field.jpg);
+  z-index: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .ididntknow-wrapper .ididntknow-text-container {
+    background-color: transparent;
+    padding: 20px;
+    background-color: #fff;
+    opacity: 0.6; }
+    .ididntknow-wrapper .ididntknow-text-container p {
+      margin: 0;
+      padding: 0;
+      font-family: Hiragino Kaku Gothic StdN, sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      color: #252525; }
+    .ididntknow-wrapper .ididntknow-text-container p span {
+      font-size: 1.25rem; }
+
 * {
   margin: 0;
   padding: 0;

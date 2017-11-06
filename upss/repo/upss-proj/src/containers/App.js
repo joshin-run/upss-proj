@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Navbar from './Navbar'
 import Banner from './Banner'
+import IDidntKnow from './IDidntKnow'
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <div className="">
         <Navbar />
         <Banner />
+        <IDidntKnow />
       </div>
     );
   }
