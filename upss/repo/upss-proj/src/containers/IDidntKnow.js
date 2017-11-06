@@ -8,6 +8,8 @@ class IDidntKnow extends Component {
           <p>I didn’t know...<br /></p>
           <p><span>my “Cosmetic Surgeon” wasn’t a Plastic Surgeon.</span></p>
         </div>
+        <div className="ididntknow-image" alt="Girl in Field">
+        </div>
       </div>
     );
   }
