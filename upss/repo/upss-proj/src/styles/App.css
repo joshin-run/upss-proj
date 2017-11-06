@@ -1,114 +1,62 @@
-.banner-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  height: 85vh;
-  width: 100;
-  background-image: url(../images/bryce-canyon.jpg);
-  z-index: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 20px 7px; }
+/*
+Error: File to import not found or unreadable: icons.
+        on line 5 of ./src/styles/app.sass
 
-.header-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: flex-start; }
+1: @import 'banner'
+2: @import 'colors'
+3: @import 'fonts'
+4: @import 'header'
+5: @import 'icons'
+6: @import 'ididntknow'
+7: @import 'learnmore'
+8: @import 'learnmorebutton'
+9: @import 'logos'
+10: @import 'main'
 
-.header-title {
-  font-family: DIN Condensed, sans-serif;
-  font-size: 10vw;
-  color: #fff; }
-
-.ididntknow-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  height: auto;
-  width: 100; }
-  .ididntknow-wrapper .ididntknow-text-container {
-    background-color: transparent;
-    padding: 20px;
-    background-color: #fff;
-    width: 100vw;
-    padding: 100px 40px; }
-    .ididntknow-wrapper .ididntknow-text-container p {
-      margin: 0;
-      padding: 0;
-      font-family: Hiragino Kaku Gothic StdN, sans-serif;
-      font-size: 2rem;
-      font-weight: bold;
-      line-height: 1;
-      text-align: left;
-      color: #252525; }
-    .ididntknow-wrapper .ididntknow-text-container p span {
-      font-size: 1.25rem; }
-  .ididntknow-wrapper .ididntknow-image {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    height: 500px;
-    width: 100vw;
-    background-image: url(../images/girl-in-field.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
-
-.learnmore-wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  width: 100vw;
-  background-color: #fff; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background-color: #fff; }
-
-.navbar-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  width: 100vw;
-  background-color: #fff;
-  padding: 0 15px 0 12px; }
-
-@media only screen and (min-width: 768px) {
-  .navbar-wrapper {
-    height: 65px; } }
-.logo-img {
-  height: 45px;
-  margin-top: 3px;
-  padding: 0; }
-
-@media only screen and (min-width: 768px) {
-  .logo-img {
-    height: 55px; } }
-.mobile-menu-icon {
-  height: 20px;
-  width: 15px;
-  display: block; }
-
-@media only screen and (min-height: 768px) {
-  .mobile-menu-icon {
-    display: none; } }
-
-/*# sourceMappingURL=App.css.map */
+Backtrace:
+./src/styles/app.sass:5
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: icons.\A         on line 5 of ./src/styles/app.sass\A \A 1: @import 'banner'\A 2: @import 'colors'\A 3: @import 'fonts'\A 4: @import 'header'\A 5: @import 'icons'\A 6: @import 'ididntknow'\A 7: @import 'learnmore'\A 8: @import 'learnmorebutton'\A 9: @import 'logos'\A 10: @import 'main'"; }

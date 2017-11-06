@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import LearnMoreButton from './LearnMoreButton'
+import upssLogo from '../images/logos/upss-logo-text.png'
+import aspsLogo from '../images/logos/ASPS_logo_300dpi.jpg'
 
 class LearnMore extends Component {
   render() {
     return (
       <div className="learnmore-wrapper">
-        <img className="" src="" alt="" />
-        <img className="" src="" alt="" />
+      <div>
+        <a href=""><img className="upss-logo-text"  src={upssLogo} alt="UPSS" /></a>
+      </div>
+      <div>
+        <a href="/"><img className="asps-logo-text"  src={aspsLogo} alt="UPSS" /></a>
+      </div>
         <LearnMoreButton />
       </div>
     );

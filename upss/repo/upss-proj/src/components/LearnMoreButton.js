@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class LearnMoreButton extends Component {
   render() {
     return (
-      <div>
-
+      <div className="learnmorebutton">
+        <p>Learn More</p>
       </div>
     );
   }
