@@ -36,12 +36,15 @@
   z-index: 0;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
   .ididntknow-wrapper .ididntknow-text-container {
     background-color: transparent;
     padding: 20px;
     background-color: #fff;
-    opacity: 0.6; }
+    opacity: 0.6;
+    width: 100vw; }
     .ididntknow-wrapper .ididntknow-text-container p {
       margin: 0;
       padding: 0;
