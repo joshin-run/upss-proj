@@ -91,13 +91,16 @@
   height: auto;
   width: auto;
   border-radius: 3px;
-  padding: 15px;
+  padding: 15px 20px 15px 20px;
   font-size: 1.25em;
   font-weight: bold;
   font-family: DIN Condensed, sans-serif;
   letter-spacing: 2px;
   color: #fff;
-  background-color: #657FC3; }
+  background-color: #5D76D8;
+  cursor: pointer; }
+  .learnmorebutton:hover {
+    background-color: #95989A; }
   .learnmorebutton p {
     margin: 0;
     margin: -1px 0 -9px 0;
