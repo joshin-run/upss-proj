@@ -64,6 +64,15 @@
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
 
+.learnmore-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100vw;
+  background-color: #fff; }
+
 * {
   margin: 0;
   padding: 0;

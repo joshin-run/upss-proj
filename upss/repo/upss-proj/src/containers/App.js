@@ -3,6 +3,7 @@ import '../styles/App.css';
 import Navbar from './Navbar'
 import Banner from './Banner'
 import IDidntKnow from './IDidntKnow'
+import LearnMore from '../components/LearnMore'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Navbar />
         <Banner />
         <IDidntKnow />
+        <LearnMore />
       </div>
     );
   }
