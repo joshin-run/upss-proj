@@ -7,12 +7,9 @@ class LearnMore extends Component {
   render() {
     return (
       <div className="learnmore-wrapper">
-      <div>
-        <a href=""><img className="upss-logo-text"  src={upssLogo} alt="UPSS" /></a>
-      </div>
-      <div>
-        <a href="/"><img className="asps-logo-text"  src={aspsLogo} alt="UPSS" /></a>
-      </div>
+        <div className="logo-text-wrapper">
+          <a href=""><img className="upss-logo-text"  src={upssLogo} alt="UPSS" /></a>
+          <a href="/"><img className="asps-logo-text"  src={aspsLogo} alt="UPSS" /></a></div>
         <LearnMoreButton />
       </div>
     );
