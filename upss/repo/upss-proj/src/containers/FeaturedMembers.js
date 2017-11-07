@@ -85,15 +85,6 @@ class FeaturedMembers extends Component {
             </p>
           </div>
         </div>
-        <div className="member-card">
-
-        </div>
-        <div className="member-card">
-
-        </div>
-        <div className="member-card">
-
-        </div>
       </div>
     );
   }
