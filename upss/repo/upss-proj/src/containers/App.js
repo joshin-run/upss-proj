@@ -6,6 +6,7 @@ import IDidntKnow from './IDidntKnow'
 import LearnMore from '../components/LearnMore'
 import FeaturedMembers from './FeaturedMembers'
 import Info from './Info'
+import Footer from './Footer'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <LearnMore />
         <FeaturedMembers />
         <Info />
+        <Footer />
       </div>
     );
   }

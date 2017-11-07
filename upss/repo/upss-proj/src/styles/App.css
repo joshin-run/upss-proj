@@ -82,6 +82,57 @@
     color: #5D76D8;
     font-size: 0.8em; }
 
+.footer-wrapper {
+  background-color: yellow; }
+
+.footer-info-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #43A3FF;
+  padding: 20px; }
+
+.footer-info {
+  font-size: 0.75em;
+  font-family: Helvetica Neue, sans-serif;
+  color: #fff; }
+  .footer-info p:nth-child(1) {
+    font-size: 1.5em; }
+
+.footer-media {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: pink; }
+
+.footer-copy {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #CC6F3B; }
+
+.footer-copy-text {
+  font-size: 0.45em;
+  font-family: Helvetica Neue, sans-serif;
+  padding: 25px 0 25px 0;
+  color: #fff; }
+
+.copy-text {
+  text-align: center; }
+
+.society-text {
+  text-align: center; }
+
+.media {
+  height: 40px;
+  width: auto;
+  padding: 5px;
+  color: #fff !important;
+  background-color: #43A3FF; }
+
 .header-wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -162,11 +213,11 @@
 
 .upss-membership-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 100%;
+  width: auto;
   margin: 0 0 30px 30px; }
 
 .asps-container {

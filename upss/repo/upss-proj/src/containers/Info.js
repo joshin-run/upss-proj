@@ -50,7 +50,6 @@ class Info extends Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }
