@@ -5,6 +5,7 @@ import Banner from './Banner'
 import IDidntKnow from './IDidntKnow'
 import LearnMore from '../components/LearnMore'
 import FeaturedMembers from './FeaturedMembers'
+import Info from './Info'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <IDidntKnow />
         <LearnMore />
         <FeaturedMembers />
+        <Info />
       </div>
     );
   }
