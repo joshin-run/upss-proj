@@ -22,7 +22,7 @@
   margin-bottom: 10px; }
 
 .header-sub-title {
-  font-size: 1.25em;
+  font-size: 1.15em;
   font-family: Helvetica Neue, sans-serif;
   text-align: center;
   color: #000;
@@ -33,17 +33,54 @@
   font-family: Helvetica Neue, sans-serif;
   text-align: center;
   text-decoration: none !important;
-  color: #5D76D8; }
+  color: #5D76D8;
+  margin-bottom: 20px;
+  cursor: pointer; }
 
 .featured-members-wrapper {
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  height: 500px;
+  height: auto;
   width: 100vw;
   padding: 50px 10px 50px 10px;
   background-color: #EFEFEF; }
+
+.member-card {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 120px;
+  width: 280px;
+  background-color: #FFFFFF;
+  padding: 5px;
+  box-shadow: -1px 2px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 15px;
+  padding: 0;
+  padding: 13px;
+  font-family: Helvetica Neue, sans-serif;
+  color: #45799B; }
+  .member-card .member-pic {
+    height: 100%;
+    width: auto; }
+  .member-card .contact-info-container {
+    height: auto;
+    width: auto;
+    margin-left: 12px; }
+  .member-card .member-name {
+    font-size: 0.87em;
+    font-weight: bold; }
+  .member-card .member-address {
+    font-size: 0.87em;
+    font-weight: normal; }
+  .member-card .member-phone-number {
+    font-size: 0.87em;
+    font-weight: bold; }
+  .member-card .member-site {
+    color: #5D76D8;
+    font-size: 0.8em; }
 
 .header-wrapper {
   display: flex;
